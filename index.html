@@ -651,13 +651,24 @@
             padding-block: 1.5rem;
         }
 
-        /* Teks rata kiri-kanan (paragraf dan poin daftar) */
+        /* Teks rata kiri di layar kecil, rata kiri-kanan hanya di layar lebar */
         .about-text p,
         .entry p,
         .entry li,
         .skills p,
         .contact p {
-            text-align: justify;
+            text-align: left;
+        }
+
+        @media (min-width: 901px) {
+
+            .about-text p,
+            .entry p,
+            .entry li,
+            .skills p,
+            .contact p {
+                text-align: justify;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -800,7 +811,7 @@
         <section id="about" class="about">
             <h2>Tentang Saya</h2>
             <figure class="about-photo">
-                <img src="images/foto.jpg" loading="lazy" alt="Foto Muhammad Irfan Syah Gory">
+                <img src="foto.jpg" loading="lazy" alt="Foto Muhammad Irfan Syah Gory">
             </figure>
             <div class="about-text">
                 <p>Saya memiliki ketertarikan mendalam di bidang teknologi, khususnya perancangan antarmuka web,
@@ -864,7 +875,7 @@
             <div class="certs">
                 <figure class="cert-portrait">
                     <div class="img">
-                        <img src="images/sertifikat-mtcna.jpg" loading="lazy"
+                        <img src="sertifikat%20-%20mtcna.jpg" loading="lazy"
                             alt="Sertifikat MikroTik Certified Network Associate (MTCNA)">
                     </div>
                     <h3>MikroTik Certified Network Associate (MTCNA)</h3>
@@ -874,7 +885,7 @@
                 </figure>
                 <figure class="cert-landscape">
                     <div class="img">
-                        <img src="images/sertifikat-pkl.jpg" loading="lazy"
+                        <img src="sertifikat%20-%20pkl.jpg" loading="lazy"
                             alt="Sertifikat Bio Farma Internship Program">
                     </div>
                     <h3>Bio Farma Internship Program</h3>
